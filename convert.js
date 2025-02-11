@@ -24,8 +24,8 @@ file.addEventListener("change", () => {
 });
 
 function sendJsonToApi(jsonObj){
-    let endpoint = "https://implantacao.desk.ms/CofreSenhas";
-    let token = "aW1wbGFudGFjYW8#fe0cc9199bbd8cfab6998d37f3f7699a2de698fe" 
+    let endpoint = "url";
+    let token = "token" 
     jsonObj.forEach(async (item) => {
         try {
             let response = await fetch(endpoint, {
