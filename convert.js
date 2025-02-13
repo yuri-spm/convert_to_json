@@ -12,7 +12,7 @@ file.addEventListener("change", () => {
         }, "");
         page.innerHTML = forSelect;
         let jsonObj = XLSX.utils.sheet_to_json(allSheet.Sheets[page.value]);
-        let jsn = JSON.stringify({TCofreSenha: jsonObj}, null, 4);
+        let jsn = JSON.stringify({data: jsonObj}, null, 4);
         result.value = jsn;
         download.href = "data:application/json;charset=utf-8,"+encodeURIComponent(result.value);
         download.download = page.value;
